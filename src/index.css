@@ -13,6 +13,19 @@ code {
     monospace;
 }
 
+.book{
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 20px;
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+h1 {
+  color: darkblue;
+}
+
 @media screen and (min-width:768px) {
   .books{
     display:grid;

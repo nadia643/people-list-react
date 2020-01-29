@@ -1,29 +1,34 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import './index.css';
+// import './index.css';
 
-function Books() {
-    return (
-    <section className="books">
-        <Book />
-        <Book />
-        <Book />
-    </section>
-    );
+// function sayName(name) {
+//     console.log(name);
+// }
+// sayName("John");
+
+function People() {
+    return(
+        <section>
+            <Person />
+        </section>
+
+    )
 }
 
-const Book = () => {
-    return (
-    <article className="book">
-        <CoverImage />
-        <Title />
-        <Author />
-    </article>
-    );
+
+
+const Person = (props) => {
+    console.log(props);
+
+    return(
+        <article>
+            <h1>John Doe</h1>
+            <p>Developer
+            </p>
+            <hr />
+        </article>
+    )
 }
 
-const CoverImage = () => <img width="100" src="https://m.media-amazon.com/images/I/71tWaxdJNWL._AC_UY218_ML3_.jpg" alt="wonkey donkey" />
-const Title = () => <h1>The wonkey donkey</h1>;
-const Author = () => <p>by Craig Smith</p>;
-
-ReactDom.render(<Books />, document.getElementById('root'));
+ReactDom.render(<People />, document.getElementById('root'));
